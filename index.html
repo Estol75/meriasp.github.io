@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+ <head>
+   <link rel="stylesheet" href="style.css" type="text/css">
+   <meta charset="utf-8">
+ <title></title>
+</head>
+ <body>
+  <style>
+   .banner{
+  position: absolute;
+left: 0;
+top:0;
+width: 100%;
+height: 20%;
+background: rgb(5,100,181);
+background: linear-gradient(158deg, rgba(5,100,181,1) 68%, rgba(0,212,255,1) 100%);
+}
+
+.text a{
+  position: absolute;
+  font-size: 60px;
+  font-family: impact ;
+  color: white;
+  left:40%;
+  top:10%;
+}
+
+.meri a{
+position: absolute;
+top:50%;
+left:43%;
+font-size: 50px;
+border: solid  rgba(5,100,181,1) 4px;
+padding: 15px 25px 15px 25px;
+border-radius: 90px;
+
+}
+.meri a:hover{
+  background: rgb(5,100,181);
+  background: linear-gradient(158deg, rgba(5,100,181,1) 39%, rgba(26,255,0,1) 100%);
+border:none;
+}
+
+#korobka{
+position: absolute;
+width: 600px;
+height: 600px;
+left: 30%;
+top:40%;
+display:none;
+
+}
+  </style>
+   <div class="banner"> </div>
+   <div class="text"><a>Топ мэрий СП4</a></div>
+
+
+
+  <div class="meri"><a id="meru" onclick="fun()">Мэрия 1</a></div>
+ <img id="korobka" src="korobka.jpg">
+  <script type="text/javascript">
+    function fun(){
+     document.getElementById('meru').style.display = "none";
+     document.getElementById('korobka').style.display = "block";
+    }
+
+
+
+  </script>
+ </body>
+</html>
